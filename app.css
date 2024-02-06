@@ -34,12 +34,29 @@ li{
 
 a{
     text-decoration: none;
+   
 }
 .menu-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: none;
+    visibility: hidden;
+    width: 40%;
+}
+.menu-list a{
+    color: #cfcfcf;
+    transition: 0.4s;
+}
+.menu-list a:hover{
+    color: #f2a900;
+    
+}
+.menu-list li{
+    transition: 0.4s;
+}
+.menu-list li:hover{
+    transform: rotate(-13deg);
+    scale: 1.2;
 }
 
 header button{
@@ -624,6 +641,8 @@ footer hr {
 }
 
 @media only screen and (min-width:700px){
+   
+
     /* .section2-tiles{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -667,6 +686,11 @@ footer hr {
 
 
 @media only screen and (min-width:900px){
+    .menu-list {
+            visibility: visible;
+    
+        }
+
     /* .section2-tiles {
         grid-template-columns: 1fr 1fr 1fr;
         }
