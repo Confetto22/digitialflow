@@ -18,9 +18,12 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
-    padding-top: 1rem;
-    background-color: #000000;
+    padding: 1.6rem 1rem;
+    position: fixed;
+    width: 100%;
+
+    /* padding-top: 1rem; */
+    background-color: #0c7a5f;
     
 }
 .logo{
@@ -155,7 +158,7 @@ header button:hover{
 .section-1{
     background-color: #000000;
     padding: 0 2rem;
-    padding-top: 5rem;
+    padding-top: 12rem;
     padding-bottom: 3rem;
 }
 
