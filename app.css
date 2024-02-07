@@ -37,10 +37,10 @@ a{
    
 }
 .menu-list{
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
-    visibility: hidden;
+    display: none;
     width: 40%;
 }
 .menu-list a{
@@ -640,6 +640,19 @@ footer hr {
     background-color: white;
 }
 
+@media only screen and (max-width:350px){
+    .section1-images{
+        display: none;
+    }
+  
+}
+@media only screen and (max-width:420px){
+header button, .pricing-button, .section-1 .book2
+ {
+        font-size: 4vw;
+    }
+}
+
 @media only screen and (min-width:700px){
    
 
@@ -685,9 +698,9 @@ footer hr {
 }
 
 
-@media only screen and (min-width:900px){
+@media only screen and (min-width:800px){
     .menu-list {
-            visibility: visible;
+            display: flex;
     
         }
 
@@ -720,6 +733,9 @@ footer hr {
    }
    .section5-header{
     width: 40%;
+   }
+   .work-text{
+    gap: 0;
    }
 
    .pricing{
