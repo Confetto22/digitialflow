@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 
 body{
@@ -75,11 +77,14 @@ header button:hover{
     cursor: pointer;
 }
 
+
+
 .book-menu{
     color: white;
     background-color: red;
-    width: 40%;
-    position: absolute;
+    width: 70%;
+    position: fixed;
+    z-index: 5;
     left: -100%;
     height: 80%;
     top: 10%;
@@ -702,7 +707,9 @@ header button, .pricing-button, .section-1 .book2
 }
 
 @media only screen and (min-width:700px){
-   
+   .book-menu{
+    width: 40%;
+   }
 
     /* .section2-tiles{
         display: grid;
